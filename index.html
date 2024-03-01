@@ -13,10 +13,10 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="w-full">
+		<div class="w-full font-poppins max-w-[1440px] mx-auto">
 			<!--Header Section-->
 			<div
-				class="header font-poppins lg:px-32 py-5 flex flex-row justify-center lg:justify-between items-center bg-black-new text-white"
+				class="header md:px-16 lg:px-32 py-5 flex flex-row justify-center md:justify-around items-center bg-black-new text-white"
 			>
 				<div class="image h-14 cursor-pointer">
 					<a href="/">
@@ -25,7 +25,7 @@
 				</div>
 				<div class="links">
 					<ul
-						class="list-none hidden lg:flex lg:flex-row space-x-20 font-normal text-lg leading-6"
+						class="list-none hidden md:flex md:flex-row space-x-10 xl:space-x-20 font-normal text-lg leading-6"
 					>
 						<li
 							class="hover:text-yellow cursor-pointer pb-1 border-black-new border border-solid hover:border-b-yellow"
@@ -51,20 +51,45 @@
 				</div>
 				<div class="contact hidden lg:block">
 					<button
-						class="text-black-new w-36 bg-yellow cursor-pointer rounded-lg px-4 py-2 font-normal text-lg leading-6 hover:font-semibold hover:shadow-sm hover:shadow-yellow"
+						class="text-black-new w-36 bg-yellow-bg cursor-pointer rounded-lg px-4 py-2 font-normal text-lg leading-6 hover:font-semibold hover:shadow-sm hover:shadow-yellow"
 					>
 						Contact Us
 					</button>
 				</div>
 			</div>
 			<!--Hero Section-->
-			<div class="lg:pl-32">
-				<button
-					class="text-yellow bg-black-new font-poppins rounded-lg px-2 py-4 font-normal leading-6 text-xl"
+			<div class="hero flex flex-col lg:flex-row no-wrap">
+				<div
+					class="content w-full xl:w-3/5 px-10 py-10 lg:pl-32 pr-8 xl:py-32 bg-yellow-bg float-left text-black-new"
 				>
-					Learn more
-				</button>
+					<div class="con">
+						<h2 class="font-semibold text-5xl leading-[62px]">
+							Outsmart the competition with best-in-class digital marketing
+							services
+						</h2>
+						<p class="font-normal text-2xl leading-8 my-7">
+							Get more traffic. Acquire more customers. Sell more stuff.
+							SmartSites offers proven strategies & reliable execution to exceed
+							your marketing goals.
+						</p>
+						<button
+							class="w-[148px] text-yellow bg-black-new font-poppins rounded-lg px-4 py-2 font-normal leading-6 text-xl hover:text-yellow-bg hover:font-semibold"
+						>
+							Learn more
+						</button>
+					</div>
+				</div>
+				<div
+					class="bg-gradient-to-r from-[#434343] to-black w-2/5 hidden xl:block"
+				>
+					<img
+						src="images/digital-marketing-services-banner-hero.png"
+						alt="Digital Marketting banner"
+						class="relative right-28 top-20"
+					/>
+				</div>
 			</div>
+			<!--Services Section-->
 		</div>
 	</body>
 </html>
