@@ -9,7 +9,9 @@ module.exports = {
 			colors: {
 				"black-new": "#0F0A09",
 				yellow: "#F1BC1E",
-				"yellow-bg": "#F1BC1E",
+			},
+			backgroundImage: {
+				services: "url('/images/vector.png')",
 			},
 		},
 	},
