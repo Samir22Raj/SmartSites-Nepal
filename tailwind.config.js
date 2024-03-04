@@ -13,7 +13,10 @@ module.exports = {
 				"off-white": "#F5F5F5",
 			},
 			backgroundImage: {
-				services: "url('/images/vector.png')",
+				testimonial: `
+				url('/images/vector.png'),
+				linear-gradient(to bottom, #434343, #000000)
+				`,
 			},
 		},
 	},
