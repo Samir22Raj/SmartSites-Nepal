@@ -18,6 +18,9 @@ module.exports = {
 				linear-gradient(to bottom, #434343, #000000)
 				`,
 			},
+			lineHeight: {
+				52: "52px",
+			},
 		},
 	},
 	plugins: [],
