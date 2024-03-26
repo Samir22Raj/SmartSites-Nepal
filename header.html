@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div
+			class="header px-8 md:px-16 lg:px-32 py-5 flex flex-row justify-between items-center bg-black-new text-white"
+		>
+			<div class="image h-14 cursor-pointer">
+				<a href="/">
+					<img src="images/Smartsites Nepal logo.png" alt="Header Logo" />
+				</a>
+			</div>
+			<div class="nav-menu">
+				<div class="nav-menu__hamburger md:hidden">
+					<div class="nav-menu__menuIcon md:hidden hover:cursor-pointer">
+						<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+						<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+						<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+					</div>
+					<div
+						class="nav-menu__cross hidden hover:cursor-pointer z-20 absolute right-8 top-12"
+					>
+						<hr class="h-1 w-6 sm:w-10 bg-white leading-5 rotate-45" />
+						<hr
+							class="h-1 w-6 sm:w-10 bg-white leading-5 -translate-y-1 -rotate-45"
+						/>
+					</div>
+				</div>
+				<ul
+					class="nav-menu__links list-none transition ease-in-out -translate-y-96 duration-1000 md:transition-none md:translate-y-0 bg-black md:bg-inherit w-full md:w-fit absolute md:relative top-0 left-0 z-10 md:z-0 space-y-6 md:space-y-0 flex flex-col md:flex-row md:space-x-10 lg:space-x-8 xl:space-x-20 font-normal text-lg leading-6 pl-6 py-4 md:pl-0 md:py-0"
+				>
+					<li
+						class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+					>
+						Home
+					</li>
+					<li
+						class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+					>
+						About Us
+					</li>
+					<li
+						class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+					>
+						Services
+					</li>
+					<li
+						class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+					>
+						Career
+					</li>
+					<li
+						class="nav-menu__item inline-block md:hidden hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+					>
+						Contact Us
+					</li>
+				</ul>
+			</div>
+			<div class="nav-menu__contact hidden lg:block">
+				<button
+					class="text-black-new w-36 bg-yellow cursor-pointer rounded-lg px-4 py-2 font-normal text-lg leading-6 hover:font-semibold hover:shadow-sm hover:shadow-yellow"
+				>
+					Contact Us
+				</button>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

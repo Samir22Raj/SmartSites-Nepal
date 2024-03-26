@@ -10,60 +10,73 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="w-full font-poppins max-w-[1440px] mx-auto cursor-default">
+		<main class="w-full font-poppins max-w-[1440px] mx-auto cursor-default">
 			<!--Header Section-->
-			<div
-				class="header md:px-16 lg:px-32 py-5 flex flex-row justify-center md:justify-between items-center bg-black-new text-white"
+			<header
+				class="header px-8 md:px-16 lg:px-32 py-5 flex flex-row justify-between items-center bg-black-new text-white"
 			>
-				<div
-					class="hamburger absolute top-15 left-6 md:hidden hover:cursor-pointer"
-				>
-					<hr class="h-1 w-6 sm:w-10 bg-white leading-5 mb-1 sm:mb-3" />
-					<hr class="h-1 w-6 sm:w-10 bg-white leading-5 mb-1 sm:mb-3" />
-					<hr class="h-1 w-6 sm:w-10 bg-white leading-5 mb-1 sm:mb-3" />
-				</div>
 				<div class="image h-14 cursor-pointer">
 					<a href="/">
 						<img src="images/Smartsites Nepal logo.png" alt="Header Logo" />
 					</a>
 				</div>
-				<div class="links">
+				<div class="nav-menu">
+					<div class="nav-menu__hamburger md:hidden">
+						<div class="nav-menu__menuIcon md:hidden hover:cursor-pointer">
+							<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+							<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+							<hr class="h-1 w-6 sm:w-8 bg-white leading-5 mb-[6px] sm:mb-2" />
+						</div>
+						<div
+							class="nav-menu__cross hidden hover:cursor-pointer z-20 absolute right-7 top-10"
+						>
+							<hr class="h-1 w-6 sm:w-10 bg-white leading-5 rotate-45" />
+							<hr
+								class="h-1 w-6 sm:w-10 bg-white leading-5 -translate-y-1 -rotate-45"
+							/>
+						</div>
+					</div>
 					<ul
-						class="list-none hidden md:flex md:flex-row space-x-10 lg:space-x-8 xl:space-x-20 font-normal text-lg leading-6"
+						class="nav-menu__links list-none transition ease-in-out -translate-y-96 duration-1000 md:transition-none md:translate-y-0 bg-black md:bg-inherit w-full md:w-fit absolute md:relative top-0 left-0 z-10 md:z-0 space-y-6 md:space-y-0 flex flex-col md:flex-row md:space-x-10 lg:space-x-8 xl:space-x-20 font-normal text-lg leading-6 pl-6 py-4 md:pl-0 md:py-0"
 					>
 						<li
-							class="hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow"
+							class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
 						>
 							Home
 						</li>
 						<li
-							class="hover:text-yellow cursor-pointer pb-1 border-black-new border border-solid hover:border-b-yellow"
+							class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
 						>
 							About Us
 						</li>
 						<li
-							class="hover:text-yellow cursor-pointer pb-1 border-black-new border border-solid hover:border-b-yellow"
+							class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
 						>
 							Services
 						</li>
 						<li
-							class="hover:text-yellow cursor-pointer pb-1 border-black-new border border-solid hover:border-b-yellow"
+							class="nav-menu__item hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
 						>
 							Career
 						</li>
+						<li
+							class="nav-menu__item inline-block md:hidden hover:text-yellow cursor-pointer hover:underline hover:underline-offset-8 decoration-yellow w-fit"
+						>
+							Contact Us
+						</li>
 					</ul>
 				</div>
-				<div class="contact hidden lg:block">
+				<div class="nav-menu__contact hidden lg:block">
 					<button
 						class="text-black-new w-36 bg-yellow cursor-pointer rounded-lg px-4 py-2 font-normal text-lg leading-6 hover:font-semibold hover:shadow-sm hover:shadow-yellow"
 					>
 						Contact Us
 					</button>
 				</div>
-			</div>
+			</header>
 			<!--Hero Section-->
 			<div class="hero flex flex-col md:flex-row">
 				<div
@@ -100,7 +113,7 @@
 			</div>
 			<!--Services Section-->
 			<div
-				class="services bg-cover bg-[url('images/vector.png')] bg-white bg-clip-border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 sm:px-20 md:px-40 md:py-16 xl:px-64 xl:py-32 gap-4 lg:gap-8"
+				class="services bg-cover bg-[url('images/vector.png')] bg-white bg-clip-border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 sm:px-20 md:px-32 md:py-16 lg:px-48 lg:py-24 xl:px-64 xl:py-32 gap-4 lg:gap-8"
 			>
 				<h2
 					class="text-3xl lg:text-4xl xl:text-5xl leading-10 xl:leading-52 font-semibold flex justify-center items-center"
@@ -485,18 +498,26 @@
 				<div
 					class="hidden lg:block py-24 w-[calc(45%)] bg-gradient-to-l from-[#434343] to-[#000000]"
 				>
-					<img src="images/Map.png" alt="Map" class="relative left-32" />
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6178035705266!2d85.33681463010794!3d27.69820520653676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ec7a8507ed%3A0x464aa24238ccfa46!2sSmartSites%20Nepal!5e0!3m2!1sen!2snp!4v1710999484457!5m2!1sen!2snp"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						class="relative left-32 rounded-3xl min-w-[calc(90%)] min-h-full"
+					></iframe>
 				</div>
 				<div
 					class="bg-yellow px-10 py-16 sm:px-16 md:px-24 lg:pl-36 md:py-24 w-full lg:w-[calc(55%)] text-black-new"
 				>
 					<div class="ReachUs flex flex-col sm:flex-row sm:justify-between">
 						<div class="image lg:hidden order-1 sm:order-2">
-							<img
-								src="./images/Map-md.png"
-								alt="Map"
-								class="min-w-full min-h-full"
-							/>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6178035705266!2d85.33681463010794!3d27.69820520653676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ec7a8507ed%3A0x464aa24238ccfa46!2sSmartSites%20Nepal!5e0!3m2!1sen!2snp!4v1710999484457!5m2!1sen!2snp"
+								class="min-w-full min-h-52 rounded-3xl"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
 						</div>
 						<div class="order-2 sm:order-1 pt-4 sm:pt-0 max-w-fit">
 							<h3
@@ -541,7 +562,7 @@
 				</div>
 			</div>
 			<!--Footer Section-->
-			<div class="footer bg-black-new px-10 md:px-20 lg:px-32 py-8">
+			<footer class="footer bg-black-new px-10 md:px-20 lg:px-32 py-8">
 				<img
 					src="images/Smartsites Nepal logo.png"
 					alt="SmartSites Logo"
@@ -589,7 +610,7 @@
 					<p class="text-off-white text-sm font-light leading-4 pt-3">
 						Copyright &copy;2024 Smartsites Nepal. All rights reserved
 					</p>
-					<div class="socials flex flex-row space-x-3">
+					<div class="socials flex flex-row justify-center space-x-3">
 						<img
 							src="images/socials/Facebook.png"
 							alt="Facebook"
@@ -612,7 +633,8 @@
 						/>
 					</div>
 				</div>
-			</div>
-		</div>
+			</footer>
+		</main>
+		<script src="js/script.js"></script>
 	</body>
 </html>
